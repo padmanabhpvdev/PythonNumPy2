@@ -1,0 +1,10 @@
+import numpy as np
+a=np.array([3,4])
+b=np.array([1,2])
+lhs=np.linalg.norm(a+b)
+rhs=np.linalg.norm(a)+np.linalg.norm(b)
+print("vector A:\n",a)
+print("vector B:\n",b)
+print("||A+B||=",lhs)
+print("||A||+||B||=",rhs)
+print("triangle inequality holds?",lhs<=rhs)
